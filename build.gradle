@@ -24,13 +24,19 @@ targetCompatibility = 1.7
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
-
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-security")
+    //compile("org.springframework.boot:spring-boot-starter-security")
     compile("org.springframework.boot:spring-boot-starter-web")
+    
+    compile("ro.isdc.wro4j:wro4j-extensions:1.7.4")
+    
+    compile 'org.webjars:angularjs:1.2.16-2'
+    compile 'org.webjars:ui-grid:3.0.0-rc.20'
     compile 'org.webjars:angular-ui-bootstrap:0.12.1-1'
+
     testCompile("org.springframework.boot:spring-boot-starter-test") 
 }
 
