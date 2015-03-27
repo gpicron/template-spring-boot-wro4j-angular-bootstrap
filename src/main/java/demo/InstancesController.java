@@ -15,6 +15,7 @@ public class InstancesController {
 	public List<Instance> list() {
 		return Arrays.asList(
 				new Instance("1", RandomStringUtils.randomAlphanumeric(10), "192.168.1.1:8080",  "UP"),
+				new Instance("3", RandomStringUtils.randomAlphanumeric(10), "192.168.1.1:8082",  "UP"),
 				new Instance("2", RandomStringUtils.randomAlphanumeric(10), "192.168.1.1:8081", "DOWN"));
 	}
 	
